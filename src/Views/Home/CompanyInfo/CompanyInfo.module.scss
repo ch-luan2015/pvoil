@@ -1,0 +1,113 @@
+@import "../../../styles/core.scss";
+.Information {
+    margin: 3rem auto;
+    padding: 1rem;
+    max-width: 1280px;
+    .Information_Left {
+        width: 100%;
+        padding-right: 1rem;
+        h1 {
+            font-family: "Encode Sans";
+            color: #48626f;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        p {
+            text-align: left;
+            font-size: 1.1rem;
+            box-sizing: border-box;
+            margin-bottom: 1.2rem;
+            line-height: 1.6;
+            font-family: "Encode Sans", sans-serif;
+            font-weight: 500;
+            color: $black;
+        }
+        @media (max-width: 424px) {
+            & {
+                h1 {
+                    text-align: center;
+                    font-size: 1.1rem;
+                }
+                p {
+                    text-align: justify;
+                    font-size: 0.8rem;
+                    margin-bottom: 1rem;
+                    color: $black;
+                }
+            }
+        }
+        @media (max-width: 767px) {
+            & {
+                padding: 1rem;
+
+                h1 {
+                    text-align: center;
+                    font-size: 1.1rem;
+                    font-weight: 700;
+                }
+                p {
+                    text-align: justify;
+                    font-size: 0.8rem;
+                    margin-bottom: 1rem;
+                    color: $black;
+                }
+            }
+        }
+        @media (max-width: 1023px) {
+            & {
+                padding: 1rem;
+
+                h1 {
+                    text-align: center;
+                    font-size: 1.1rem;
+                    font-weight: 700;
+                }
+                p {
+                    text-align: justify;
+                    font-size: 0.8rem;
+                    margin-bottom: 1rem;
+                    color: $black;
+                }
+            }
+        }
+    }
+    .Information_Right {
+        padding-left: 1rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: flex-start;
+        align-items: center;
+        .Information__OilPrice {
+            width: 100%;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        .Information__Video {
+            width: 100%;
+            padding-top: 1rem;
+            iframe {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    }
+}
+
+.ant-table-thead {
+    font-size: 1.125rem;
+    font-weight: 500;
+    .ant-table-cell {
+        text-align: center;
+    }
+}
+.ant-table-row {
+    .ant-table-cell {
+        text-align: center;
+        font-weight: 500;
+    }
+}

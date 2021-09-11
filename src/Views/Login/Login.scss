@@ -1,0 +1,172 @@
+//Responsive
+
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$laptop-width: 1440px;
+
+
+@mixin tablet { @media (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin desktop { @media (min-width: #{$desktop-width})  {
+        @content;
+    }
+}
+
+@mixin laptop { @media (min-width: #{$laptop-width})  {
+        @content;
+    }
+}
+
+@mixin display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin input {
+    background: #f3f6f9;
+    border-color: #f3f6f9;
+    border-radius: .42rem;
+    padding: 8px 19px;
+
+    @include laptop() {
+        padding: 16px 19px;
+    }
+}
+
+//login-aside
+.contain-aside {
+    padding: 2.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-flow: column ;
+    justify-content: space-between;
+
+    @include desktop() {
+        height: 100vh;
+    }
+
+    .ant-space {
+        display: block;
+        text-align: start;
+    }
+
+    .list-link {
+        display: none;
+
+        @include desktop() {
+            display: block;
+        }
+    }
+
+    .link {
+        display: inline-flex;
+    }
+
+    h1 {
+        padding-bottom: 0;
+        margin: 1.25rem 0 0 ;
+        font-size: 30px;
+        color: #ffffff;
+
+         @include desktop() {
+            font-size: 26px;
+        }
+    }
+
+    h3 {
+        color: #ffffff;
+        font-size: 24px;
+
+         @include desktop() {
+            font-size: 19px;
+        }
+    }
+
+    p {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: lighter;
+
+        @include desktop() {
+            font-size: 12px;
+        }
+    }
+
+    a {
+        color: #ffffff;
+        font-size: 14px;
+    }
+}
+
+//login-form
+
+.contain-form {
+    padding: 1.75rem;
+    @include display();
+    flex-direction: column;
+
+    @include desktop() {
+        height: 100vh;
+    }
+
+    .login-form {
+
+         @include desktop() {
+            width: 400px;
+        }
+
+    }
+
+    .form-title {
+        margin: 7.5rem 0 2.5rem;
+        @include display();
+        flex-direction: column;
+
+        @include desktop() {
+            margin: 0 0 60px;
+        }
+
+        .title {
+            display: block;
+
+            .ant-space-item {
+                margin-right: 0 !important;
+            }
+
+            h1 {
+                font-size: 20px;
+                font-weight: bold;
+                margin: 0;
+            }
+
+            p {
+                color: #b5b5c3;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .ant-input-lg {
+        font-size: 16px;
+        @include input();
+    }
+
+    .ant-input-affix-wrapper-lg {
+        @include input();
+    }
+
+    //config css button
+
+    .login-form-button {
+        padding: 6.5px 30px;
+        font-size: 13px;
+        border-radius: 0.42rem;
+    }
+}

@@ -1,0 +1,115 @@
+@import "../../../../styles/core.scss";
+
+.HeaderHome {
+    background-color: $white;
+    margin: 3rem auto 0;
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 2px solid #f0f0f0;
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+    .HeaderHome_Container {
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        .HeaderHome_Logo {
+            width: 100%;
+            font-size: 100%;
+            font-weight: bold;
+            max-width: 20%;
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+            margin-bottom: 2rem;
+        }
+        .HeaderHome_Menu {
+            width: 100%;
+            text-decoration: none;
+            color: white;
+            font-family: "Encode Sans";
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.5s ease 0s;
+            border-bottom: none;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media (max-width: 426px) {
+    .HeaderHome_Container {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+        .HeaderHome_Logo {
+            width: 70%;
+            img {
+                width: 100%;
+            }
+        }
+        .HeaderHome_Menu {
+            background-color: $light-gray1;
+            width: 30%;
+            text-decoration: none;
+            a {
+                color: $black;
+            }
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .HeaderHome_Container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        .HeaderHome_Logo {
+            img {
+                width: 100%;
+            }
+        }
+        .HeaderHome_Menu {
+            width: 100%;
+            text-decoration: none;
+            align-items: center;
+            font-family: "Encode Sans";
+            font-size: 1.2rem;
+            font-weight: 800;
+            transition: all 0.5s ease 0s;
+            border-bottom: none;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    .HeaderHome_Container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        .HeaderHome_Logo {
+            img {
+                width: 100%;
+            }
+        }
+        .HeaderHome_Menu {
+            width: 100%;
+            text-decoration: none;
+            align-items: center;
+            font-family: "Encode Sans";
+            font-size: 1.2rem;
+            font-weight: 800;
+            transition: all 0.5s ease 0s;
+            border-bottom: none;
+            text-transform: uppercase;
+        }
+    }
+}

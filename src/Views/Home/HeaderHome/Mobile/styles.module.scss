@@ -1,0 +1,59 @@
+@import "../../../../styles/core.scss";
+
+.navSticky {
+    background: $light-gray4 !important;
+    background-size: 120% !important;
+    background-position: center center !important;
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 0.4rem 0 !important;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.left,
+.right {
+    display: flex;
+    flex: 1 0 50px;
+    justify-content: center;
+    width: 50px;
+}
+.center {
+    margin-right: auto;
+    display: flex;
+    flex: 1 1 auto;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    .logo {
+        padding-top: 4px;
+        width: 30px;
+    }
+}
+
+.footer {
+    padding: 8px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: italic;
+}
+
+.sideNav {
+    background: $light-gray5 !important;
+    background-size: 150% !important;
+    background-position: center center !important;
+    height: 100px !important;
+}
+
+.welcome {
+    font-style: italic;
+    text-align: right;
+    margin-top: 1rem;
+}

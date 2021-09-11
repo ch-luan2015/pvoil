@@ -1,0 +1,80 @@
+@import "../../../styles/core.scss";
+
+.CompanyOverview {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    .CompanyOverview_Grid {
+        padding: 0;
+        margin: 0 auto;
+        max-width: 1280px;
+
+        .pv_title {
+            width: 100%;
+            text-align: center;
+            margin: 2rem auto;
+            p {
+                font-family: "Encode Sans";
+                color: #48626f;
+                font-size: 2.5rem;
+                font-weight: 700;
+                text-align: center;
+            }
+            @include media(phone) {
+                margin: 1rem;
+                font-size: 2rem;
+                font-weight: 700;
+                text-align: center;
+            }
+            @include media(tablet) {
+                margin: 1rem;
+                font-size: 2rem;
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+
+        .CompanyOverview_Grid__Content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            padding: 0 !important;
+            .ViewItem {
+                text-align: center;
+                .ViewItem_Logo {
+                    img {
+                        width: 30%;
+                        object-fit: cover;
+                    }
+                }
+                .ViewItem_Caption {
+                    margin: 1rem 0;
+                    text-align: center;
+                    .ViewItem_Caption__Title {
+                        font-size: 1.4rem;
+                        font-weight: 700;
+                        text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+                        margin-bottom: 0;
+                    }
+                    .ViewItem_Caption__Caption {
+                        font-size: 1.1rem;
+                        font-weight: 400;
+                        text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+                        margin-bottom: 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .btn_ViewMore {
+            margin: 2rem 0 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,144 @@
+@import "../../../styles/core.scss";
+
+.Portal_main {
+    max-width: 1280px;
+    margin: 0 auto 3rem;
+    .PC_Left {
+        padding-left: 0.5rem;
+        .PC_Title1 {
+            width: 100%;
+            text-align: left;
+            position: relative;
+            z-index: 1;
+            a {
+                font-family: "Encode Sans";
+                color: #48626f;
+                text-align: center;
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+            &::before {
+                content: " ";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 1px;
+                width: 100%;
+                border-bottom: 3px solid #f7a360;
+            }
+        }
+        .PC_Title2 {
+            width: 100%;
+            text-align: left;
+            position: relative;
+            z-index: 1;
+            a {
+                font-family: "Encode Sans";
+                color: #48626f;
+                text-align: center;
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+            &::before {
+                content: " ";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 1px;
+                width: 100%;
+                border-bottom: 3px solid #f7a360;
+            }
+        }
+        .content_1 {
+            figure {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-start;
+                h3 {
+                    width: 60%;
+                    text-align: left;
+                    a {
+                        font-size: 1.125rem;
+                        font-weight: 500;
+                        color: #0d5cab !important;
+                    }
+                    p {
+                        font-size: 1rem;
+                        color: $light-gray1;
+                        font-weight: 500;
+                        text-align: left;
+                    }
+                }
+                caption {
+                    text-align: left;
+                    font-size: 1rem;
+                    color: $black;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .Information__Video {
+        width: 100%;
+        padding-right: 0.5rem;
+        figure {
+            iframe {
+                padding-top: 1rem;
+                width: 100%;
+                height: 250px;
+            }
+            figcaption {
+                font-size: 1.125rem;
+                font-weight: 600;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 424px) {
+    & {
+        h1 {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        p {
+            text-align: justify;
+            font-size: 1rem;
+            box-sizing: border-box;
+            margin-bottom: 1rem;
+        }
+    }
+}
+@media screen and (min-width: 767px) {
+    & {
+        h1 {
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        p {
+            text-align: justify;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+@media screen and (min-width: 1023px) {
+    & {
+        padding: 1rem;
+
+        h1 {
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        p {
+            text-align: justify;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+}

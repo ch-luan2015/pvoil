@@ -1,0 +1,57 @@
+@import "../../../styles/core.scss";
+
+.footer_main {
+    background: $light-gray5;
+    .footer_top {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 1.2rem 2rem;
+
+        .footer_top__logo {
+            padding: 0.5rem;
+            border-bottom: 2px solid $orange-under;
+        }
+
+        @include media(tablet) {
+            padding: 1.2rem 2rem;
+        }
+        @include media(phone) {
+            padding: 1rem;
+        }
+    }
+    .footer_bottom {
+        max-width: 1280px;
+        margin: 0 auto;
+
+        .footer_bottom__container {
+            padding: 0 2rem;
+            .headerList {
+                color: $orange-under;
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+            .itemList {
+                font-size: 1.1rem;
+            }
+            .footer_bottom__copyright {
+                padding: 0 1rem;
+
+                .copyrightText {
+                    padding-top: 0.55rem;
+                    font-size: 1.2rem;
+                }
+                p {
+                    text-align: right;
+                    color: $dark-gray5;
+                }
+            }
+
+            @include media(tablet) {
+                padding: 0 2rem;
+            }
+            @include media(phone) {
+                padding: 0 1rem;
+            }
+        }
+    }
+}
